@@ -1,0 +1,8 @@
+{
+  "name": "Stellar example",
+  "version": "0.0.1",
+  "author": "Sherwood",
+  "dependencies": {
+    "stellar-sdk": "^0.8.0"
+  }
+}
