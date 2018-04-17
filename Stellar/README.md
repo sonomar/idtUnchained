@@ -1,10 +1,10 @@
-#### Stellar Example
+## Stellar Example
 
 [API Reference](https://www.stellar.org/developers/reference/)
 
 **Testnet Server URL**: https://horizon-testnet.stellar.org
 
-##### Basic Examples
+### Basic Examples
 
 [Page](https://www.stellar.org/developers/js-stellar-sdk/reference/examples.html#loading-an-accounts-transaction-history)
 
