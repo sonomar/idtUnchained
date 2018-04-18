@@ -49,6 +49,7 @@ const JsonRpc = (method, params, cb) => {
   req.end();
 }
 
+
 const testAddress = 'n1mafk6ocbr65b4UGyfZwj1jfmUm33MPvP';
 const testPrivateKey = '92PibKf7Dh2tyngTpwzXGmyWpvQYS5kRC78dg97gwBNYCbYBaVi';
 
