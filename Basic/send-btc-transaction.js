@@ -95,25 +95,25 @@ JsonRpc('importaddress', [testAddress], (err, data) => {
           {
             'mqVvUjU7Gf2Wbv9Zs2JUvVyhKtDHgqGZtY': parseFloat((utxo.amount - 0.00001).toFixed(5))
           }
-        ], (error, data) => {
-          if (error) {
-            console.log(error);
+        ], (err, data) => {
+          if (err) {
+            console.log(err);
           } else {
             console.log('create raw transaction result:', data);
 
 
             // Step 4: sign the transaction with the private key
-            JsonRpc('signrawtransaction', [data.result, null, [testPrivateKey]], (error, data) => {
-              if (error) {
-                console.log(error);
+            JsonRpc('signrawtransaction', [data.result, null, [testPrivateKey]], (err, data) => {
+              if (err) {
+                console.log(err);
               } else {
                 console.log('sign raw transaction result:', data);
 
 
                 // Step 5: send the signed transaction (which is a hex string)
-                JsonRpc('sendrawtransaction', [data.result.hex], (error, data) => {
-                  if (error) {
-                    console.log(error);
+                JsonRpc('sendrawtransaction', [data.result.hex], (err, data) => {
+                  if (err) {
+                    console.log(err);
                   } else {
                     console.log('send raw transaction result:', data);
                     console.log('view transaction at:', `https://www.blocktrail.com/tBTC/tx/${data.result}`);
