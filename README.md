@@ -13,7 +13,8 @@ Projects to help get started with blockchain
 
 *Blockstack*
 - Build their tutorials
-- UPort integration
 
 *HyperLedger Fabric*
 - Research small project
+
+*UPort*
