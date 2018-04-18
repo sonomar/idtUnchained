@@ -53,7 +53,7 @@ const testAddress = 'n1mafk6ocbr65b4UGyfZwj1jfmUm33MPvP';
 const testPrivateKey = '92PibKf7Dh2tyngTpwzXGmyWpvQYS5kRC78dg97gwBNYCbYBaVi';
 
 // Step 1: import address to get UTXOs
-JsonRpc('listaccounts', null, (err, data) => {
+JsonRpc('importaddress', [testAddress], (err, data) => {
   if (err) {
     console.log(err);
   } else {
