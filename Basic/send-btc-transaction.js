@@ -12,8 +12,8 @@ const http = require('http');
 // wrapper for JSON-RPC calls
 const JsonRpc = (method, params, cb) => {
   let options = {
-    host: '54.82.43.6',
-    port: '3000',
+    host: '54.164.101.19',
+    port: '18332',
     auth: 'test:kY4oFXLLF_oScWqI52xUyuSHK87n0XvYYD9_pHhYk9o=',
     method: 'POST',
     headers: {
